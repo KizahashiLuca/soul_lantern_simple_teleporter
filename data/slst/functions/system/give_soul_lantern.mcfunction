@@ -13,6 +13,7 @@ execute store result score @s TeleporterPosZ run data get entity @s Pos[2]
 
 ## Store scoreboard to storage
 data modify storage slst:teleporter Teleporter.Temp.Pos set from entity @s Pos
+data modify storage slst:teleporter Teleporter.Temp.Rotation set from entity @s Rotation
 
 ## Give soul_lantern
 loot spawn ~ ~ ~ loot slst:teleporter
