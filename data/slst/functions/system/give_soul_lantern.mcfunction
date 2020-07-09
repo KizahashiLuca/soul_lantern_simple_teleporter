@@ -6,6 +6,11 @@
 ## Version: alpha-0.1
 ##################################
 
+## Add scoreboards
+scoreboard objectives add TeleporterPosX dummy
+scoreboard objectives add TeleporterPosY dummy
+scoreboard objectives add TeleporterPosZ dummy
+
 ## Detect lantern set
 execute store result score @s TeleporterPosX run data get entity @s Pos[0]
 execute store result score @s TeleporterPosY run data get entity @s Pos[1]
@@ -22,3 +27,8 @@ data remove entity @e[type=minecraft:item,nbt={Item:{id:"minecraft:soul_lantern"
 ## Merge data storage
 data modify storage slst:teleporter Teleporter.Store append from storage slst:teleporter Teleporter.Temp
 data remove storage slst:teleporter Teleporter.Temp
+
+## Remove scoreboards
+scoreboard objectives remove TeleporterPosX
+scoreboard objectives remove TeleporterPosY
+scoreboard objectives remove TeleporterPosZ

@@ -18,7 +18,7 @@
               "entity" : "this",
               "replace": true,
               "lore":[
-                ["",{"text":"Press Shift+Q simultaneously, ","color":"white","bold":false,"italic":false}],
+                ["",{"translate":"Press (%s)+(%s) simultaneously, ","with":[{"keybind":"key.sneak"},{"keybind":"key.drop"}],"color":"white","bold":false,"italic":false}],
                 ["",{"text":"Teleport to ","color":"white","bold":false,"italic":false},{"translate":"(%s, %s, %s)","with":[{"score":{"name":"@s","objective":"TeleporterPosX"}},{"score":{"name":"@s","objective":"TeleporterPosY"}},{"score":{"name":"@s","objective":"TeleporterPosZ"}}],"color":"green","bold":true,"italic":false}]
               ]
             },{
