@@ -21,6 +21,7 @@ scoreboard players set @a SneakTime 0
 
 ## Reset Storage
 data remove storage slst:teleporter Teleporter
+kill @e[type=minecraft:area_effect_cloud,tag=SoulLantern]
 execute as @a run clear @s minecraft:soul_lantern{display:{Name:'{"extra":[{"bold":true,"italic":false,"color":"aqua","text":"Teleporter"}],"text":""}'}}
 
 ## Send Title Message
