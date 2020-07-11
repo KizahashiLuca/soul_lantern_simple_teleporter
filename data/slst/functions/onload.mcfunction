@@ -19,9 +19,7 @@ scoreboard players set @a DropLantern 0
 scoreboard players set @a SneakTime 0
 
 ## Reset Storage
-data remove storage slst:teleporter Teleporter
 kill @e[type=minecraft:area_effect_cloud,tag=SoulLantern]
-execute as @a run clear @s minecraft:soul_lantern{display:{Lore:['{"extra":[{"bold":true,"italic":false,"color":"light_purple","text":"HOW TO USE Teleporter"}],"text":""}']}}
 
 ## Send Title Message
 tellraw @a ["",{"text":"[Soul Lantern Simple Teleporter]","color":"aqua","bold":true},{"text":" Loaded","color":"white"}]
