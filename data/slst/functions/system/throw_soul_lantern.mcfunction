@@ -17,3 +17,7 @@ data remove storage slst:teleporter Teleporter.SoulLantern
 
 ## Remove scoreboard
 scoreboard objectives remove TeleporterTemp
+
+## Set scoreboard
+scoreboard players set @s SneakTime 0
+scoreboard players remove @s DropSoulLantern 1

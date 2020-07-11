@@ -9,3 +9,7 @@
 ## Detect setting lantern
 function slst:system/give_soul_lantern
 kill @e[type=minecraft:item,nbt={Item:{id:"minecraft:lantern"}},sort=nearest,limit=1]
+
+## Set scoreboard
+scoreboard players set @s SneakTime 0
+scoreboard players remove @s DropLantern 1
