@@ -10,6 +10,6 @@
 function slst:system/give_soul_lantern
 kill @e[type=minecraft:item,nbt={Item:{id:"minecraft:lantern"}},sort=nearest,limit=1]
 
-## Set scoreboard
-scoreboard players set @s SneakTime 0
+## Loop
 scoreboard players remove @s DropLantern 1
+execute as @s[scores={DropLantern=1..,SneakTime=1..}] at @s run function slst:system/throw_lantern
