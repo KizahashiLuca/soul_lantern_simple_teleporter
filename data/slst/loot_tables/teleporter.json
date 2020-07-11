@@ -19,7 +19,8 @@
               "replace": true,
               "lore":[
                 ["",{"translate":"Press (%s)+(%s) simultaneously, ","with":[{"keybind":"key.sneak"},{"keybind":"key.drop"}],"color":"white","bold":false,"italic":false}],
-                ["",{"text":"Teleport to ","color":"white","bold":false,"italic":false},{"translate":"(%s, %s, %s)","with":[{"score":{"name":"@s","objective":"TeleporterPosX"}},{"score":{"name":"@s","objective":"TeleporterPosY"}},{"score":{"name":"@s","objective":"TeleporterPosZ"}}],"color":"green","bold":true,"italic":false}]
+                ["",{"text":"Teleport to ","color":"white","bold":false,"italic":false},{"translate":"(%s, %s, %s)","with":[{"score":{"name":"@s","objective":"TeleporterPosX"}},{"score":{"name":"@s","objective":"TeleporterPosY"}},{"score":{"name":"@s","objective":"TeleporterPosZ"}}],"color":"green","bold":true,"italic":false}],
+                ["",{"text":"  in ","color":"white","bold":false,"italic":false},{"nbt":"Teleporter.Temp.Dimension","storage":"slst:teleporter","color":"green","bold":true,"italic":false}]
               ]
             },{
               "function":"minecraft:set_nbt",
