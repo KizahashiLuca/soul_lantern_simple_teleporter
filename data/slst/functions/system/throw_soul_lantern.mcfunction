@@ -10,8 +10,9 @@
 scoreboard objectives add TeleporterTemp dummy
 
 ## Detect throwing soul_lantern
-execute as @s run function slst:system/compare_soul_lantern_tag
-kill @e[type=minecraft:item,nbt={Item:{id:"minecraft:soul_lantern"}},sort=nearest,limit=1]
+execute store success score @s TeleporterTemp run data get storage slst:teleporter Teleporter.Store
+execute as @s[scores={TeleporterTemp=1..}] run function slst:system/compare_soul_lantern_tag
+kill @e[type=minecraft:item,nbt={Item:{id:"minecraft:soul_lantern",tag:{display:{Lore:['{"extra":[{"bold":true,"italic":false,"color":"light_purple","text":"HOW TO USE Teleporter"}],"text":""}']}}}},sort=nearest,limit=1]
 data remove storage slst:teleporter Teleporter.Temp
 data remove storage slst:teleporter Teleporter.SoulLantern
 

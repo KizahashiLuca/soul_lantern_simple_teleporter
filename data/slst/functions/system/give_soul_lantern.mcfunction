@@ -23,7 +23,7 @@ data modify storage slst:teleporter Teleporter.Temp.Dimension set from entity @s
 
 ## Give soul_lantern
 loot spawn ~ ~ ~ loot slst:teleporter
-data modify storage slst:teleporter Teleporter.Temp.Message set from entity @e[type=minecraft:item,nbt={Item:{id:"minecraft:soul_lantern",tag:{display:{Tag:"UnsetStorage"}}}},sort=nearest,limit=1] Item.tag.display.Lore[1]
+data modify storage slst:teleporter Teleporter.Temp.Message set from entity @e[type=minecraft:item,nbt={Item:{id:"minecraft:soul_lantern",tag:{display:{Tag:"UnsetStorage"}}}},sort=nearest,limit=1] Item.tag.display.Lore[2]
 data remove entity @e[type=minecraft:item,nbt={Item:{id:"minecraft:soul_lantern",tag:{display:{Tag:"UnsetStorage"}}}},sort=nearest,limit=1] Item.tag.display.Tag
 
 ## Merge data storage
