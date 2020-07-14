@@ -21,4 +21,4 @@ scoreboard objectives remove TeleporterTemp
 
 ## Loop
 scoreboard players remove @s DropSoulLantern 1
-execute as @s[scores={DropSoulLantern=1..,SneakTime=1..}] at @s run function slst:system/throw_soul_lantern
+execute as @s[scores={DropSoulLantern=1..,SneakTime=1..}] at @s run function slst:system/throw_teleporter
