@@ -9,6 +9,6 @@ Teleport by pressing Shift + Q key simultaneously w/ the teleporter.
 
 ## Command
 Reset command
-```mcfunction
+```mcfunction:
 /function slst:reset
 ```
