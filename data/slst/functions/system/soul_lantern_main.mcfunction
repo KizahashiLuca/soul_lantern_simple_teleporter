@@ -10,7 +10,7 @@
 execute as @a[scores={DropSoulLantern=1..,SneakTime=2}] at @s run function slst:system/throw_empty_soul_lantern
 
 ## Throw Soul Lantern
-execute as @a[scores={DropSoulLantern=1..,SneakTime=3}] at @s run function slst:system/throw_teleporter
+execute as @a[scores={DropSoulLantern=1..,SneakTime=4}] at @s run function slst:system/throw_teleporter
 
 ## Reset scoreboard
 scoreboard players reset @a DropSoulLantern

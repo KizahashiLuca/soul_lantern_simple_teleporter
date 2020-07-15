@@ -12,4 +12,4 @@ kill @e[type=minecraft:item,nbt={Item:{id:"minecraft:soul_lantern"}},nbt=!{Item:
 
 ## Loop
 scoreboard players remove @s DropSoulLantern 1
-execute as @s[scores={DropSoulLantern=1..,SneakTime=1..}] at @s run function slst:system/throw_empty_soul_lantern
+execute as @s[scores={DropSoulLantern=1..,SneakTime=2..}] at @s run function slst:system/throw_empty_soul_lantern

@@ -10,5 +10,5 @@
 execute as @s[nbt=!{SelectedItem:{tag:{display:{Lore:['{"extra":[{"bold":true,"italic":false,"color":"light_purple","text":"HOW TO USE Teleporter"}],"text":""}']}}}}] run scoreboard players set @a SneakTime 1
 
 ## Detect teleporter
-execute as @s[nbt={SelectedItem:{tag:{display:{Lore:['{"extra":[{"bold":true,"italic":false,"color":"light_purple","text":"HOW TO USE Teleporter"}],"text":""}']}}}}] run scoreboard players set @a SneakTime 2
+execute as @s[nbt={SelectedItem:{tag:{display:{Lore:['{"extra":[{"bold":true,"italic":false,"color":"light_purple","text":"HOW TO USE Teleporter"}],"text":""}']}}}}] run scoreboard players set @a SneakTime 3
 execute as @s[nbt={SelectedItem:{tag:{display:{Lore:['{"extra":[{"bold":true,"italic":false,"color":"light_purple","text":"HOW TO USE Teleporter"}],"text":""}']}}}}] at @s run summon minecraft:falling_block ~ ~1 ~ {BlockState:{Name:"minecraft:barrier"},Time:100,NoGravity:1b}
